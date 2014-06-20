@@ -32,10 +32,10 @@ function animateOut(){
 }
 function videoLoad(){
 	$("#stillframe").hide();
+	document.getElementById('audio').play();
 	$("#hover-logo").mouseenter(animateIn);
 	$("#wrapper").mouseleave(animateOut);
 }
 function audioLoad(){
 	this.currentTime = 11;
-	this.play();
 }
