@@ -37,5 +37,6 @@ function videoLoad(){
 	$("#wrapper").mouseleave(animateOut);
 }
 function audioLoad(){
-	this.currentTime = 11;
+	this.currentTime = 8;
+	this.volume = .5;
 }
