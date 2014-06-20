@@ -65,7 +65,7 @@ p{
   width:75px;
   height:30px;
   background-color:rgba(0,163,172,1);
-  border:1px solid transparent;
+  border:2px solid transparent;
   padding-top:2px;
   transition:.5s all;
   cursor: pointer;
