@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$("#placeholder").hover(animateIn, animateOut);
+	$("#hover-logo").mouseenter(animateIn);
+	$("#wrapper").mouseleave(animateOut);
 	/*setTimeout(function(){
 		$("#wrapper").animate({
 			'opacity':'1'
@@ -7,16 +8,22 @@ $(document).ready(function(){
 	},1000);*/
 });
 function animateIn(){
-		$("#wrapper").animate({
+	console.log('enterlogo');
+		$("#wrapper").stop().animate({
 			'opacity':'1',
 			'width':'80%',
 			'height':'100%'
 		},500);
+		$("#wrapper").css('z-index', '1001');
 }
 function animateOut(){
-		$("#wrapper").animate({
+	console.log('leavewrapper');
+		$("#wrapper").stop().animate({
 			'opacity':'0',
-			'width':'0',
-			'height':'0'
+			'width':'40%',
+			'height':'50%',
+			'z-index':'999'
 		},500);
+		$("#wrapper").css('z-index', '999');
+		
 }
