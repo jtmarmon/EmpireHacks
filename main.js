@@ -14,6 +14,7 @@ function animateIn(){
 			'height':'100%'
 		},500);
 		$("#wrapper").css('z-index', '1001');
+		$("#hover-logo").attr('src', 'noglow.png');
 }
 function animateOut(){
 	console.log('leavewrapper');
@@ -22,7 +23,9 @@ function animateOut(){
 			'width':'40%',
 			'height':'50%',
 			'z-index':'999'
-		},500);
+		},500, function(){
+			$("#hover-logo").attr('src', 'blackglow.png');
+		});
 		$("#wrapper").css('z-index', '999');
 		
 }
@@ -33,6 +36,8 @@ function videoLoad(){
 	$("#wrapper").mouseleave(animateOut);
 }
 function audioLoad(){
-	this.currentTime = 8;
-	this.volume = .5;
+	 $('audio').bind('canplay', function(){
+        $(this)[0].currentTime = 8;
+        $(this)[0].volume = .5;
+    });
 }

@@ -58,6 +58,7 @@ p{
   margin-right: auto;
   text-align: center;
   position: relative;
+  overflow-y:scroll;
 }
 #tagline{
   font-size:30px;
@@ -87,7 +88,7 @@ p{
 #signup input{
   height:36px;
   margin-right: 10px;
-  font-size:16px;
+  font-size:14px;
   width:200px;
   padding: 0 5px;
 }
