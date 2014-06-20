@@ -7,10 +7,10 @@
 	</head>
 	<body>
 		<div id = "stillframe" style = "width:100%; height:100%; background-color:white; position: fixed; z-index:2000;"> </div>
-		<video  onready = "videoLoad()" muted autoplay loop id="bgvid">
+		<video onloadeddata = "videoLoad()" muted autoplay loop id="bgvid">
 			<source src="timelapse8	.mp4" type="video/mp4">
 		</video>
-		<audio id = "audio" loop>
+		<audio  onloadeddata = "audioLoad()" id = "audio" loop>
 			<source src = "empire.mp3" type = "audio/mpeg">
 		</audio>
 

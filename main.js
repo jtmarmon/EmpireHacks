@@ -1,8 +1,4 @@
 $(document).ready(function(){
-	var video = document.getElementById('bgvid');
-	video.addEventListener('loadeddata', videoLoad);
-	var audio = document.getElementById('audio');
-	audio.addEventListener('loadeddata', audioLoad);
 	
 	/*setTimeout(function(){
 		$("#wrapper").animate({
