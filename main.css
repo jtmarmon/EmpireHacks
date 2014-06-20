@@ -1,0 +1,83 @@
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+video#bgvid{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(../images/cover.jpg) no-repeat;
+  background-size: cover; 
+}
+#banner{
+  width:80%;
+  height:90%;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,255,255,.8);
+  z-index: 1;
+}
+h1{
+
+  font-weight: 200;
+  color:black;
+  margin: 0 0;
+  color:rgba(0,163,172,1);
+  font-size: 100px;
+}
+p{
+  margin:0 0;
+  font-weight: 300;
+}
+#wrapper{
+  opacity:0;
+  background-color: rgba(255,255,255,.9);
+  width:80%;
+  height:100%;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+}
+#tagline{
+  font-size:30px;
+  margin-bottom: 30px;
+    color:black;
+}
+#signup *{
+  display: inline-block;
+  vertical-align: top;
+}
+#signup div{
+  font-size:20px;
+  color:white;
+  width:75px;
+  height:30px;
+  background-color:rgba(0,163,172,1);
+  border:1px solid transparent;
+  padding-top:2px;
+  transition:.5s all;
+  cursor: pointer;
+}
+#signup div:hover{
+ background-color:white;
+ border: 2px solid rgba(0,163,172,1);
+ color: rgba(0,163,172,1);
+}
+#signup input{
+  height:36px;
+  margin-right: 10px;
+  font-size:16px;
+  width:200px;
+}
