@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	var video = document.getElementById('bgvid');
 	video.addEventListener('loadeddata', videoLoad);
+	var audio = document.getElementById('audio');
+	audio.addEventListener('loadeddata', audioLoad);
 	
 	/*setTimeout(function(){
 		$("#wrapper").animate({
@@ -32,4 +34,8 @@ function videoLoad(){
 	$("#stillframe").hide();
 	$("#hover-logo").mouseenter(animateIn);
 	$("#wrapper").mouseleave(animateOut);
+}
+function audioLoad(){
+	this.currentTime = 11;
+	this.play();
 }
