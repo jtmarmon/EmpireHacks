@@ -41,11 +41,19 @@ p{
   margin:0 0;
   font-weight: 300;
 }
+#placeholder{
+  width:90%;
+  height:100%;
+  opacity:0;
+  position: absolute;
+  left:5%;
+  top:0;
+}
 #wrapper{
   opacity:0;
-  background-color: rgba(255,255,255,.9);
-  width:80%;
-  height:100%;
+  background-color: rgba(255,255,255,.8);
+  width:0;
+  height:0;
   margin-left:auto;
   margin-right: auto;
   text-align: center;
@@ -61,19 +69,19 @@ p{
 }
 #signup div{
   font-size:20px;
-  color:white;
   width:75px;
   height:30px;
-  background-color:rgba(0,163,172,1);
-  border:2px solid transparent;
   padding-top:2px;
   transition:.5s all;
   cursor: pointer;
-}
-#signup div:hover{
  background-color:white;
  border: 2px solid rgba(0,163,172,1);
  color: rgba(0,163,172,1);
+}
+#signup div:hover{
+  background-color:rgba(0,163,172,1);
+  color:white;
+  border:2px solid transparent;
 }
 #signup input{
   height:36px;
