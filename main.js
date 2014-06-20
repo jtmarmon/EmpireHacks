@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$("#hover-logo").mouseenter(animateIn);
-	$("#wrapper").mouseleave(animateOut);
+	var video = document.getElementById('bgvid');
+	video.addEventListener('loadeddata', videoLoad);
+	
 	/*setTimeout(function(){
 		$("#wrapper").animate({
 			'opacity':'1'
@@ -26,4 +27,9 @@ function animateOut(){
 		},500);
 		$("#wrapper").css('z-index', '999');
 		
+}
+function videoLoad(){
+	$("#stillframe").hide();
+	$("#hover-logo").mouseenter(animateIn);
+	$("#wrapper").mouseleave(animateOut);
 }
