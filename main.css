@@ -113,3 +113,7 @@ p{
   position:absolute;  
   right:256px;
 }
+#p1, #p2{
+  width:100%;
+  height:100%;
+}
