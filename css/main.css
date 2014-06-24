@@ -1,0 +1,150 @@
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 200;
+    margin:0 0 ;
+    text-align: center;
+}
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+video#bgvid{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(../images/cover.jpg) no-repeat;
+  background-size: cover; 
+}
+#banner{
+  width:80%;
+  height:90%;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,255,255,.8);
+  z-index: 1;
+}
+h1{
+  font-weight: 300;
+  color:black;
+  margin: 0 0;
+  font-size: 75px;
+}
+h3,h4{
+  font-weight: 300;
+  color:black;
+}
+h3{
+  font-size:30px;
+}
+h4{
+  font-weight: 200;
+  font-size: 25px;  
+}
+p{
+  margin:0 0;
+  font-weight: 300;
+}
+#placeholder{
+  width:80%;
+  height:100%;
+  position: absolute;
+  left:10%;
+  top:0;
+}
+#wrapper{
+  opacity:0;
+  background-color: rgba(255,255,255,.8);
+  width:40%;
+  height:50%;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  overflow-y:scroll;
+}
+#tagline{
+  font-size:30px;
+  margin-bottom: 30px;
+    color:black;
+}
+
+.logo{
+  width:100%;
+
+  height: 100%;
+}
+#hover-logo-container{
+
+  position:absolute;  
+   left:50%;
+  z-index: 1000;
+}
+#hover-logo{
+  position:absolute;  
+  right:256px;
+}
+#p1, #p2, #p3{
+  width:100%;
+  min-height: 100%;
+  overflow:scroll;
+}
+#p2{
+  border-top: 1px solid rgba(0,163,172,1);
+  border-bottom: 1px solid rgba(0,163,172,1);
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  
+  border-top: 30px solid rgba(0,163,172,1);
+  margin: 0 auto;
+  transition: all .7s linear;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#p2 h1{
+  margin-top:20px;
+}
+#p2 li{
+  list-style: none;
+
+}
+#p2 li h3{
+  color:rgba(0, 163, 172, 1);
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top:8px;
+}
+#p2 li p{
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+#p2 ul{
+  padding: 0 25%;
+  width:50%;
+}
+#p2 > h4{
+  margin-left:3%;
+  margin-bottom: 0;
+}
+.logo-container{
+  width:512px;
+  height:512px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#info li{
+  opacity: 0;
+  transition: 1s all linear;
+}
